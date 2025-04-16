@@ -33,7 +33,7 @@ function editCardContent(card, catData)
 
   // Set the image (stored locally).
   const cardImage = card.querySelector("img");
-  cardImage.src = "images/" + catData.name.toLowerCase().trim() + ".jpg";
+  cardImage.src = "images/" + catData.name.toLowerCase().replace(/\s+/g, '') + ".jpg";
 
   // Need to clean this up.
   card.querySelector(".regions").textContent = catData.regions.join(", ");
