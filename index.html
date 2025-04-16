@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>The World of Big Cats</title>
+    <!-- Credit: https://icons8.com/icon/120342/cat-face -->
+    <link rel="icon" type="image/png" href="/images/favicon.png"> 
+    <meta name="description" content="A Catalog of Large Cats"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1 class="title">😼WELCOME TO THE WORLD OF BIG CATS😾</h1>
+    </header>
+    <div id="card-container"></div>
+    <div class="card" style="display: none">
+      <div class="card-content">
+        <h2>Cat Name</h2>
+        <img src=""/>
+        <table class="bigCatInfo">
+          <tr>
+            <td>Regions</td>
+            <td class="regions"></td>
+          </tr>
+          <tr>
+            <td>Lifespan (years)</td>
+            <td class="lifespan"></td>
+          </tr>
+          <tr>
+            <td>Speed (km/h)</td>
+            <td class="speed"></td>
+          </tr>
+          <tr>
+            <td>Length (m)</td>
+            <td class="length"></td>
+          </tr>
+          <tr>
+            <td>Mass (kg)</td>
+            <td class="mass"></td>
+          </tr>
+          <tr>
+            <td>Bite Force (psi)</td>
+            <td class="biteForce"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="sortMenu">
+      <label for="category">Sort by:</label>
+      <select id="category">
+        <option value="">-- Choose --</option>
+        <option value="lifespan">Lifespan</option>
+        <option value="speed">Speed</option>
+        <option value="length">Length</option>
+        <option value="mass">Mass</option>
+        <option value="biteForce">Bite Force</option>
+      </select>
+      <label>
+        <input type="radio" name="sortOrder" id="asc" value="asc" checked/>
+        <label for="asc">Ascending</label>
+      </label>
+      <label>
+        <input type="radio" name="sortOrder" id="desc" value="desc"/>
+        <label for="desc">Descending</label>
+      </label>
+    </div>
+    <div id="infoPanel">
+      <h3></h3>
+    </div>
+    <div class="footer">
+      <button onClick="compareCats();">Compare Cats</button>
+      <button onclick="showConservationStatus();">Conservation Status</button>
+    </div>
+  </body>
+  
+</html>
